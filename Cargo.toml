@@ -1,11 +1,11 @@
 [package]
 name = "risclient"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "GPL-3.0-or-later"
 authors = ["James \"ec0\" Hebden <ec0@tachibana.systems>"]
 readme = "README.md"
-repository = "https://github.com/devec0/risclient-rs"
+repository = "https://github.com/devec0/risclient"
 description = """
 An extremely simple streaming client for the RIPE RIS-Live service.
 """
