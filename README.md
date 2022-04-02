@@ -17,4 +17,4 @@ TODO
 
 author
 ======
-James "ec0" Hebden <ec0@tachibana.systems>
+[James "ec0" Hebden](https://spooky.computer)
