@@ -1,0 +1,32 @@
+[package]
+name = "risclient"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+authors = ["James \"ec0\" Hebden <ec0@tachibana.systems>"]
+readme = "README.md"
+repository = "https://github.com/devec0/risclient-rs"
+description = """
+An extremely simple streaming client for the RIPE RIS-Live service.
+"""
+categories = ["api-bindings"]
+keywords = ["ris", "ris-live", "asn", "bgp", "ripe"]
+
+[lib]
+name = "risclient"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ristest"
+path = "src/ristest.rs"
+
+[dependencies]
+futures = "*"
+futures-util = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+tokio = { version = "1.17", features = ["macros", "rt", "net", "rt-multi-thread", "io-std"] }
+tokio-stream = "*"
+tungstenite = { version = "*", features = ["native-tls"] }
+tokio-tungstenite = { version = "*", features = ["native-tls"] }
